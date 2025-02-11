@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "04a688f6-36df-41d8-808b-0ebde59a8ae1",
+		"name": "aeromexico",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16857642"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/v1/alimentos/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"papaya\",\n  \"descripcion\": \"Fruta roja\",\n  \"estatus\": true,\n  \"cantidad_stock\": 100.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/alimentos/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"alimentos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/v1/alimentos/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/alimentos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"alimentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
